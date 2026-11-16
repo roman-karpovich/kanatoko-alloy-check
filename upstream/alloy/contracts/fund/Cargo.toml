@@ -1,0 +1,23 @@
+[package]
+name = "alloy-fund"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+crate-type = ["lib", "cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
+proptest = "1.5"
+
+# Compile a network's defaults into the fund. Without either feature a fund
+# only uses addresses the platform admin sets on it.
+[features]
+mainnet = []
+testnet = []

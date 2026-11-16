@@ -46,15 +46,15 @@ fallback window; another capture may not have that ordering.
 - The same oracle IDs and feed types as upstream's
   `contracts/nav/src/test_mainnet.rs` are used. This complements that test;
   it does not claim that Alloy lacks fork coverage.
-- `primary-expiry.json`: Protocol 29 mainnet ledger 65510790,
-  timestamp 1794839992; 12 present and 2 confirmed-absent entries.
-- `conversion-expiry.json`: Protocol 29 mainnet ledger 65510792,
-  timestamp 1794840002; 12 present and 2 confirmed-absent entries.
+- `primary-expiry.json`: Protocol 29 mainnet ledger 65512112,
+  timestamp 1794846602; 12 present and 2 confirmed-absent entries.
+- `conversion-expiry.json`: Protocol 29 mainnet ledger 65512134,
+  timestamp 1794846712; 12 present and 2 confirmed-absent entries.
 - Both captures record zero final replay RPC reads and contain coherent
   ledger provenance and content digests.
-- Kanatoko is vendored at exact source revision
-  `46dc28854e707e8b6e423e04a3aeb347c8f6a3c6` (local-address fix, PR #1).
-  Its version label 29.1.1 does not make it identical to the published crate.
+- Kanatoko is the published crates.io package, pinned to `=29.1.1`.
+  `Cargo.lock` records its registry source and checksum; no copy of the
+  library is stored in this repository. The captures match this release.
 
 The local NAV admin uses mocked authorization. These tests do not sign or
 submit transactions, change deployed NAV routes, trade assets, or establish

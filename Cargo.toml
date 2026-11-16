@@ -8,4 +8,4 @@ license = "Apache-2.0"
 [workspace]
 
 [dev-dependencies]
-kanatoko = { path = "vendor/kanatoko", features = ["capture"] }
+kanatoko = { version = "=29.1.1", features = ["capture"] }

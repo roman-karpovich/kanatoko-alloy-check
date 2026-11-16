@@ -5,9 +5,8 @@ from https://github.com/0xDanomite/alloy-stellar at revision
 4ed8639e8e624d2b9674ac7edb665bbd5dcfa5da. Contract source and license are
 included under upstream/alloy; the license is also available as LICENSE.
 
-Kanatoko is vendored at revision 46dc28854e707e8b6e423e04a3aeb347c8f6a3c6
-from https://github.com/roman-karpovich/kanatoko, with its MIT/Apache-2.0
-license files preserved under vendor/kanatoko.
+Kanatoko 29.1.1 is consumed as a crates.io dependency under its MIT/Apache-2.0
+terms. Its source is not copied into this reproduction.
 
 Fixtures contain public Stellar ledger state and third-party oracle code
 needed for offline replay; that code remains under its original terms.

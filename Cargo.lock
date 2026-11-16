@@ -1155,6 +1155,8 @@ dependencies = [
 [[package]]
 name = "kanatoko"
 version = "29.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "110c48cd9224ad7ea01023debfcfcdc77ba5fead582c6fbedf91494ea1948d9e"
 dependencies = [
  "base64 0.22.1",
  "serde",
